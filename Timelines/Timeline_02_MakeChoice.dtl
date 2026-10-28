@@ -1,0 +1,16 @@
+leave Character_Cleo [animation="Bounce Out"]
+Character_Cleo: What will I do?
+- Brush my fangs | [if {Brushed} == false]
+	jump Timeline_03_BrushFangs/
+- Take my meds | [if {TookMeds} == false]
+	jump Timeline_03_TakeMeds/
+- Take a shower | [if {Showered} == false]
+	jump Timeline_03_Shower/
+- Get dressed | [if {Dressed} == false]
+	jump Timeline_03_GetDressed/
+- Have breakfast | [if {Ate} == false]
+	jump Timeline_03_Breakfast/
+- Study for my exam | [if {Studied} == false]
+	jump Timeline_03_Study/
+- Do my makeup | [if {DidMakeup} == false]
+	jump Timeline_03_Makeup/

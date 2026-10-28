@@ -1,0 +1,4 @@
+Character_Cleo: No more time! If the bus leaves without me, MY LIFE IS OVER.
+if {Dressed} == false:
+	Character_Cleo: Ugh, I'm not even dressed! This is humiliating!
+leave Character_Cleo [animation="Bounce Out"]

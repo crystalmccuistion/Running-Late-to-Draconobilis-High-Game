@@ -1,0 +1,8 @@
+join Character_Cleo left [animation="Slide From Left"]
+Character_Cleo: I make breakfast! And eat breakfast! And do the dishes!
+set {MinutesRemaining} -= 30.0
+set {Ate} = true
+if {MinutesRemaining} > 0.0:
+	jump Timeline_02_MakeChoice/
+else:
+	jump Timeline_04_OutOfTime/

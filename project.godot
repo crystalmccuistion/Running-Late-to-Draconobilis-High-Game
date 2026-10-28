@@ -1,0 +1,86 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Itty Bitty Game"
+run/main_scene="uid://tnh6rql315ps"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Dialogic="*uid://ds2q0uclmolvu"
+
+[dialogic]
+
+directories/dch_directory={
+"Character_Cleo": "res://Characters/Character_Cleo.dch"
+}
+directories/dtl_directory={
+"Timeline_01_Start": "res://Timelines/Timeline_01_Start.dtl",
+"Timeline_02_MakeChoice": "res://Timelines/Timeline_02_MakeChoice.dtl",
+"Timeline_03_Breakfast": "res://Timelines/Timeline_03_Breakfast.dtl",
+"Timeline_03_BrushFangs": "res://Timelines/Timeline_03_BrushFangs.dtl",
+"Timeline_03_GetDressed": "res://Timelines/Timeline_03_GetDressed.dtl",
+"Timeline_03_Makeup": "res://Timelines/Timeline_03_Makeup.dtl",
+"Timeline_03_Shower": "res://Timelines/Timeline_03_Shower.dtl",
+"Timeline_03_Study": "res://Timelines/Timeline_03_Study.dtl",
+"Timeline_03_TakeMeds": "res://Timelines/Timeline_03_TakeMeds.dtl",
+"Timeline_04_OutOfTime": "res://Timelines/Timeline_04_OutOfTime.dtl"
+}
+layout/style_directory={
+"": "res://Styles/NewStyle.tres",
+"NewStyle": "res://Styles/NewStyle.tres"
+}
+layout/style_list=["res://Styles/NewStyle.tres"]
+layout/default_style="res://Styles/NewStyle.tres"
+variables={
+"Ate": false,
+"Brushed": false,
+"DidMakeup": false,
+"Dressed": false,
+"MinutesRemaining": 60,
+"Showered": false,
+"ShoweredAfterDressing": false,
+"Studied": false,
+"TookMeds": false
+}
+
+[display]
+
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+
+[input]
+
+dialogic_default_action={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":16,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194309,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":16,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":32,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":16,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":88,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":0,"pressure":0.0,"pressed":false,"script":null)
+]
+}
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

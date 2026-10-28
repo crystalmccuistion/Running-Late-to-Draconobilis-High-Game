@@ -1,0 +1,13 @@
+join Character_Cleo left [animation="Slide From Left"]
+Character_Cleo: I get dressed!
+if {ShoweredAfterDressing} == true:
+	Character_Cleo: ...Again.
+	set {MinutesRemaining} -= 5.0
+else:
+	Character_Cleo: Aaaand try on just a few more outfits than I meant to.
+	set {MinutesRemaining} -= 10.0
+set {Dressed} = true
+if {MinutesRemaining} > 0.0:
+	jump Timeline_02_MakeChoice/
+else:
+	jump Timeline_04_OutOfTime/

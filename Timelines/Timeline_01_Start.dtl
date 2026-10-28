@@ -1,0 +1,10 @@
+join Character_Cleo left [animation="Bounce In"]
+Character_Cleo: Uh-oh! I slept through my alarm!
+Character_Cleo: I've got, like, one hour before I gotta be out the door or I'll miss the bus!
+Character_Cleo: Ugh, that's not nearly enough time to get ready! I have an exam first period; I was gonna cram some study time in!
+Character_Cleo: And more importantly, I can't afford to look like a slob in front of HER.
+Character_Cleo: The most beautiful,
+Character_Cleo: most intelligent, COOLEST girl in the whole world\:
+Character_Cleo: Verity... Valence.
+Character_Cleo: Alright. Get to work, Cleo! Kick this day's ass!
+jump Timeline_02_MakeChoice/

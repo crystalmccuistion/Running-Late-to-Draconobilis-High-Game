@@ -1,0 +1,11 @@
+join Character_Cleo left [animation="Slide From Left"]
+Character_Cleo: I shower real quick!
+set {Showered} = true
+if {Dressed} == true:
+	set {Dressed} = false
+	set {ShoweredAfterDressing} = true
+set {MinutesRemaining} -= 10.0
+if {MinutesRemaining} > 0.0:
+	jump Timeline_02_MakeChoice/
+else:
+	jump Timeline_04_OutOfTime/

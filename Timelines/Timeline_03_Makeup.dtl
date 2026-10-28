@@ -1,0 +1,9 @@
+join Character_Cleo left [animation="Slide From Left"]
+Character_Cleo: I do my makeup!
+Character_Cleo: And then undo it and do it again but classier!
+set {DidMakeup} = true
+set {MinutesRemaining} -= 20.0
+if {MinutesRemaining} > 0.0:
+	jump Timeline_02_MakeChoice/
+else:
+	jump Timeline_04_OutOfTime/
